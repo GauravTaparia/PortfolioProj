@@ -1,0 +1,465 @@
+/* Header CSS Start */
+
+body {
+  background-color: darkolivegreen;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 5px;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  top: 0px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+  justify-content: space-evenly;
+  background-color: beige;
+  border-radius: 20px;
+  margin: 5px;
+  width: 500px;
+}
+
+.header-title:hover {
+  width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.profile-Photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid darkolivegreen;
+  animation: photo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes photo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.header-h1 {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px;
+  color: darkolivegreen;
+}
+
+.header-h1:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.profile-Photo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 50px;
+  padding-right: 40px;
+  border-left: 20px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  color: beige;
+}
+
+.header-links a:hover {
+  scale: 1.3;
+  transition: color 0.3s ease;
+}
+
+/* Header CSS Ends */
+
+/* Main-Content CSS Starts */
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: darkolivegreen;
+  margin: 5px;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.main-contentright {
+  border: 3px solid beige;
+  height: 500px;
+  width: 800px;
+  background-color: beige;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.main-contentright:hover {
+  scale: 1;
+  transition: width 0.3s ease;
+}
+
+.main-contentright-img {
+  width: 400px;
+  height: 450px;
+  border-radius: 50%;
+  border: 3px solid darkolivegreen;
+  margin: 20px;
+}
+
+.main-contentright-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border: 3px solid darkslategray;
+}
+
+.main-contentleft {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid beige;
+  border-radius: 0 20px 20px 0;
+}
+
+.main-contentleft-p {
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  font-size: larger;
+}
+
+.main-contentleft-h1:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.main-contentleft-h1 {
+  margin: 20px 20px 10px 20px;
+  color: beige;
+}
+
+.main-contentleft-hr {
+  width: 50%;
+}
+
+.main-contentleft-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-contentleft-socialdiv {
+  display: flex;
+  border: 3px solid beige;
+  border-radius: 25px;
+  width: 75%;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.main-contentleft-socialdiv:hover {
+  color: darkolivegreen;
+  border: 3px solid beige;
+}
+
+.main-contentleft-button {
+  border: 2px solid beige;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: darkolivegreen;
+  color: #f5f5dc;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.main-contentleft-button:hover {
+  scale: 1.2;
+  background-color: beige;
+  color: darkolivegreen;
+}
+
+.linkedin {
+  width: 20px;
+  margin: 10px;
+}
+.linkedin:hover {
+  color: darkolivegreen;
+  scale: 1.2;
+}
+
+.whatsapp {
+  width: 20px;
+  margin: 10px;
+}
+.whatsapp:hover {
+  color: darkolivegreen;
+  scale: 1.2;
+}
+
+.email {
+  width: 20px;
+  margin: 10px;
+}
+.email:hover {
+  color: darkolivegreen;
+  scale: 1.2;
+}
+
+.github {
+  width: 20px;
+  margin: 10px;
+}
+.github:hover {
+  color: darkolivegreen;
+  scale: 1.2;
+}
+
+.main-contentleft-socialdiv-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid beige;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+  margin: 10px;
+}
+
+.main-contentleft-socialdiv-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid beige;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+  margin: 10px;
+}
+
+.main-contentleft-socialdiv-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid beige;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+  margin: 10px;
+}
+
+.main-contentleft-socialdiv-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid beige;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+  margin: 10px;
+}
+.main-contentleft-socialdiv-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid beige;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+  margin: 10px;
+}
+
+/* Main-Content CSS Ends */
+
+/* Footer CSS Starts */
+
+.footer {
+  border: 3px solid beige;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  font-size: large;
+  margin: 10px;
+}
+
+.footer-span {
+  color: red;
+  animation: heartbeat 3s infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    font-size: larger;
+    color: reds;
+  }
+  50% {
+    font-size: medium;
+    color: beige;
+  }
+}
+
+.footer-span:hover {
+  color: beige;
+  transition: color 0.3s ease;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  border: 3px solid darkolivegreen;
+  background-color: beige;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.footer-linkedin {
+  width: 20px;
+  height: 20px;
+  border: 3px solid darkolivegreen;
+}
+
+.footer-h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+}
+
+.footer-social-links {
+  border: 3px solid darkolive green;
+  background-color: darkolivegreen;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid beige;
+  border-right: 3px solid beige;
+  width: 500px;
+  overflow: hidden;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.footer-links-a {
+  text-decoration: none;
+  color: beige;
+  font-family: cursive;
+  font-size: large;
+}
+
+.footer-h2-links {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  margin-bottom: 10px;
+}
+
+.footer-links-a:hover {
+  scale: 1.2;
+  transition: transform 0.3s ease;
+}
+
+.footer-h2-links:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+  scale: 1.2;
+  transition: transform 0.3s ease;
+}
+
+.footer-text {
+  width: 400px;
+}
+
+/* Footer CSS ends */
+
+@media screen and (max-width: 768px) {
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-contentright,
+  .main-contentleft {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-container {
+    width: 100%;
+  }
+  .footer-social {
+    width: 100%;
+    margin: 0;
+  }
+}
