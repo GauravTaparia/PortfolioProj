@@ -123,7 +123,7 @@ body {
 }
 
 .main-contentright-img {
-  width: 400px;
+  width: 300px;
   height: 470px;
   border-radius: 50%;
   border: 3px solid darkolivegreen;
@@ -1075,5 +1075,255 @@ button:hover {
   .footer-social {
     width: 100%;
     margin: 0;
+  }
+}
+
+/* ———— TABLET (iPad, Portrait & Landscape) ———— */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .main-content,
+  .main-content-skill,
+  .main-divproj,
+  .main-contentach,
+  .main-contentcontact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-contentright,
+  .main-contentleft,
+  .main-contentleftskill,
+  .main-contentrightskill,
+  .main-div-leftproj,
+  .main-div-centerproj,
+  .main-div-rightproj,
+  .main-contentleftach,
+  .main-contentrightach,
+  .main-contentleftcontact,
+  .contact-formcontact,
+  .contact-form-divcontact {
+    width: 90% !important;
+    height: auto !important;
+    min-width: unset;
+  }
+  .header-title {
+    width: 90% !important;
+  }
+  .header-links {
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+  .footer,
+  .footer-links-container,
+  .footer-social {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ———— ENHANCED MOBILE STYLES ———— */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    background: #283618;
+    color: #f5f5dc;
+  }
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    background: #606c38;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    margin: 0 0 16px 0;
+    padding: 10px 0 2px 0;
+  }
+  .header-title {
+    width: 100%;
+    justify-content: center;
+    font-size: 22px;
+    background: transparent;
+    margin: 0 0 10px 0;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .profile-Photo {
+    width: 58px;
+    height: 58px;
+    margin-right: 8px;
+  }
+  .header-h1 {
+    font-size: 22px;
+    padding: 7px 0;
+  }
+  .header-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 0 0 10px 0;
+  }
+  .header-links a {
+    color: #f5f5dc;
+    font-size: 18px;
+    padding: 7px 20px;
+    border-radius: 8px;
+    background: #283618;
+    margin: 0 0 3px 0;
+    display: block;
+    width: 70vw;
+    text-align: center;
+    transition: background 0.18s;
+  }
+  .header-links a:hover {
+    background: #dda15e;
+    color: #283618;
+    scale: 1.055;
+  }
+  .main-content,
+  .main-content-skill,
+  .main-divproj,
+  .main-contentach,
+  .main-contentcontact {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 2vw;
+    background: #283618;
+    border-radius: 12px;
+    gap: 16px;
+    margin: 0 0 18px 0;
+  }
+  .main-contentright,
+  .main-contentleft,
+  .main-contentrightskill,
+  .main-contentleftskill,
+  .main-div-leftproj,
+  .main-div-centerproj,
+  .main-div-rightproj,
+  .main-contentrightach,
+  .main-contentleftach,
+  .main-contentleftcontact,
+  .contact-formcontact,
+  .contact-form-divcontact {
+    width: 98%;
+    min-width: unset;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto 14px auto;
+    border-radius: 12px;
+    padding: 12px 2vw;
+    box-sizing: border-box;
+  }
+  .main-contentright-img,
+  .achievement-imgproj,
+  .project-imgach {
+    width: 85vw;
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 16px;
+  }
+  .main-contentleft-h1,
+  .main-contentleft-h1skill,
+  .main-contentleft-h1ach,
+  .main-content-h1contact {
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 7px;
+  }
+  .main-contentleft-p,
+  .main-contentleft-pskill,
+  .main-contentleft-pach,
+  .main-content-pcontact {
+    font-size: 15px;
+    margin: 6px 2vw 12px 2vw;
+  }
+  .main-contentleft-social,
+  .main-contentleft-socialdiv {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .main-contentleft-socialdiv > * {
+    margin: 4px;
+  }
+  .main-contentleft-button {
+    width: 100%;
+    font-size: 17px;
+    padding: 7px 0;
+    margin: 8px 0;
+  }
+  .skills-list,
+  .skills {
+    gap: 7px;
+    font-size: 16px;
+  }
+  .footer,
+  .footer-links-container,
+  .footer-social,
+  .footer-social-links {
+    flex-direction: column !important;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 3vw;
+    background: #606c38;
+    border-radius: 0 0 12px 12px;
+    margin: 0;
+  }
+  .footer-text,
+  .footer-p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin: 7px 0;
+  }
+}
+
+/* ———— ENHANCED EXTRA-SMALL DEVICES ———— */
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 15px;
+    background: #283618;
+    color: #f5f5dc;
+  }
+  .header {
+    padding: 6px 0;
+  }
+  .header-title,
+  .header-h1,
+  .header-links a {
+    font-size: 18px;
+    padding: 4px 0;
+  }
+  .main-contentleft-h1,
+  .main-contentleft-h1skill,
+  .main-contentleft-h1ach,
+  .main-content-h1contact {
+    font-size: 17px;
+  }
+  .main-contentleft-p,
+  .main-contentleft-pskill,
+  .main-contentleft-pach,
+  .main-content-pcontact {
+    font-size: 13px;
+  }
+  .main-contentright-img,
+  .achievement-imgproj,
+  .project-imgach {
+    max-width: 180px;
+  }
+  .footer,
+  .footer-social,
+  .footer-text {
+    font-size: 13px;
+    padding: 5px 2vw;
   }
 }
