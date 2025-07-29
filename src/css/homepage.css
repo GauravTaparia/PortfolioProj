@@ -110,7 +110,7 @@ body {
 
 .main-contentright {
   border: 3px solid beige;
-  height: 500px;
+  height: 520px;
   width: 800px;
   background-color: beige;
   border-top-left-radius: 20px;
@@ -124,7 +124,7 @@ body {
 
 .main-contentright-img {
   width: 400px;
-  height: 450px;
+  height: 470px;
   border-radius: 50%;
   border: 3px solid darkolivegreen;
   margin: 20px;
@@ -141,6 +141,7 @@ body {
   flex-direction: column;
   border: 3px solid beige;
   border-radius: 0 20px 20px 0;
+  height: 520px;
 }
 
 .main-contentleft-p {
@@ -305,6 +306,619 @@ body {
 }
 
 /* Main-Content CSS Ends */
+
+/* Main Content Skills CSS Starts */
+
+.main-content-skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  padding-right: 10;
+  background-color: beige;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-contentleftskill {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid darkolivegreen;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: darkolivegreen;
+  width: 400px;
+  margin: 10px;
+  height: 415px;
+}
+
+.main-contentleft-h1skill {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  text-decoration: underline;
+}
+
+.main-contentleft-pskill {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  font-size: large;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: beige;
+}
+
+.main-contentrightskill {
+  border: 3px solid beige;
+  height: 415px;
+  width: 1000px;
+  padding: 20px;
+  background-color: darkolivegreen;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills {
+  width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+  border: 3px solid beige;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+}
+.skill-bar {
+  margin-bottom: 18px;
+}
+.skill-bar span {
+  display: block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 5px;
+  color: darkolivegreen;
+  font-size: large;
+}
+.bar {
+  background: beige;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 18px;
+  position: relative;
+  border: 3px solid darkolivegreen;
+  animation: grow;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+}
+
+.bar.html::after {
+  width: 90%;
+  background: #25e1ff;
+}
+.bar.css::after {
+  width: 90%;
+  background: #2979ff;
+}
+.bar.js::after {
+  width: 80%;
+  background: #ffd600;
+}
+.bar.mysql::after {
+  width: 75%;
+  background: #ff7043;
+}
+
+.bar.python::after {
+  width: 70%;
+  background: #666;
+}
+
+.pie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: beige;
+  color: darkolivegreen;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 40px;
+  width: 350px;
+  border-radius: 25px;
+  height: 310px;
+}
+
+.pie-chart {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #00d1ff 0% 25%,
+    /* HTML 25% */ #2979ff 25% 47%,
+    /* CSS 22% */ #ffd93d 47% 66%,
+    /* JS 19% */ #ff7043 66% 82%,
+    /* MySQL 16% */ #666 82% 100% /* Python 18% */
+  );
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.pie-chart:hover {
+  transform: rotate(360deg);
+  transition: transform 3s ease;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 18px;
+  background: beige;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+.center-text:hover {
+  background: darkolivegreen;
+  color: beige;
+  transition: background-color 3s ease, color 3s ease;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.legend li {
+  margin: 6px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+}
+.legend li:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.legend span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.html-pie {
+  background: #00d1ff;
+}
+.css-pie {
+  background: #2979ff;
+}
+.js-pie {
+  background: #ffd600;
+}
+.mysql-pie {
+  background: #ff7043;
+}
+.python-pie {
+  background: #666;
+}
+
+/* Main Content Skills CSS Ends */
+
+/* Main Content Achievments CSS Starts */
+
+.main-divproj {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-div-leftproj {
+  width: 300px;
+  height: 400px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: beige;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main-div-left-h1proj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+}
+.main-div-left-pproj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  font-size: large;
+}
+
+.main-div-centerproj {
+  width: 700px;
+  height: 440px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.achievementproj {
+  width: 300px;
+  height: 400px;
+  border: 3px solid darkolivegreen;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-div-rightproj {
+  width: 300px;
+  height: 400px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.achievement-imgproj {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid beige;
+}
+.achievement-imgproj:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border: 3px solid darkslategray;
+}
+
+.achievement-textproj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  text-align: center;
+  font-size: large;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+  background-color: beige;
+}
+
+.achievement-h2proj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.achievement-h2proj:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.certificateproj {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid darkolivegreen;
+  border-radius: 25px;
+  background-color: beige;
+  padding: 10px;
+  margin: 10px;
+}
+
+.certificateproj:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border: 3px solid darkslategray;
+}
+
+.main-div-rightproj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+}
+
+.certificate-imgproj {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid darkolivegreen;
+}
+.certificate-textproj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  font-size: large;
+  margin-left: 10px;
+}
+
+.certificate-h2proj {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.certificate-h2proj:hover {
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+.main-div-rightproj .certificatesproj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Main Content Achievement CSS Ends */
+
+/* Main Content Projects Start */
+.main-contentach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 3px solid beige;
+  border-radius: 25px;
+}
+.main-contentrightach {
+  border: 3px solid beige;
+  background-color: darkolivegreen;
+  border-radius: 25px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.main-contentleft-h1ach {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  font-size: 30px;
+}
+
+.main-contentleft-pach {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  font-size: large;
+}
+
+.projectach {
+  width: 400px;
+  height: 400px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.project-h2ach {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  margin-top: 10px;
+}
+
+.project-imgach {
+  width: 70%;
+  height: 200px;
+  border-radius: 25px;
+  margin: 10px;
+  border: 3px solid beige;
+}
+.project-imgach:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.project-textach {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  font-size: large;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.main-contentleftach {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid darkolivegreen;
+  background-color: beige;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  width: 50%;
+}
+/* Main Content Projects End */
+
+/* Main Content CSS Starts */
+
+.main-contentcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-contentleftcontact {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid beige;
+  border-radius: 25px;
+  height: 300px;
+}
+
+.main-content-h1contact {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.main-content-pcontact {
+  border: 3px solid beige;
+  background-color: beige;
+  color: darkolivegreen;
+  padding: 20px;
+  border-radius: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-content-socialcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.main-content-socialcontact a:hover {
+  scale: 1.2;
+  transition: color 0.3s ease;
+}
+
+.contact-formcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-evenly;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  gap: 10px;
+  border: 3px solid beige;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  border: 3px solid beige;
+  width: 660px;
+  height: 300px;
+}
+.contact-form-divcontact {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid beige;
+  border-radius: 25px;
+  padding: 20px;
+  height: 300px;
+}
+.contact-form-elementcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.contact-form-elementcontact h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  font-size: large;
+}
+
+.contact-formcontact input,
+.contact-formcontact textarea {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid beige;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+}
+
+.contact-formcontact input:focus,
+.contact-formcontact textarea:focus {
+  border-color: darkolivegreen;
+  outline: none;
+}
+
+button {
+  background-color: darkolivegreen;
+  color: beige;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button:hover {
+  background-color: beige;
+  color: darkolivegreen;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Main Content CSS Ends */
 
 /* Footer CSS Starts */
 
